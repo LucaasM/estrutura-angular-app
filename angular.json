@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "best-practices-app": {
+    "ESTRUTURA-ANGULAR-APP": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/best-practices-app",
+            "outputPath": "dist/ESTRUTURA-ANGULAR-APP",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "best-practices-app:build:production"
+              "browserTarget": "ESTRUTURA-ANGULAR-APP:build:production"
             },
             "development": {
-              "browserTarget": "best-practices-app:build:development"
+              "browserTarget": "ESTRUTURA-ANGULAR-APP:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "best-practices-app:build"
+            "browserTarget": "ESTRUTURA-ANGULAR-APP:build"
           }
         },
         "test": {
@@ -100,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d6edb75f-6745-4d3a-98c5-d8639df21095"
   }
 }
